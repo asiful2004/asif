@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>asiful830 - Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/asiful830 (2).png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="images/3Dskin.png" alt="asiful830" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="ADVeX">asiful830</h1>
+
+          <p class="title">Manager & Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:infinixhoot10s@gmail.com" class="contact-link">infinixhoot10s@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-discord"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Discord</p>
+              <a href="https://discord.com/users/883960271599722546" class="contact-link">asiful830#3805</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">youtube</p>
+
+              <a href="https://www.youtube.com/@asiful830/featured" class="contact-link">asiful830</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Dhaka Bangladesh</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://discord.com/users/883960271599722546" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@asiful830/featured" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html"><button class="navbar-link  active">About</button></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="resume.html"><button class="navbar-link">Resume</button></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="portfolio.html"><button class="navbar-link">Portfolio</button></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="contact.html"><button class="navbar-link">Contact</button></a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="blog.html"><button class="navbar-link">Blog</button></a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <header>
+        <h2 class="h2 article-title">Portfolio</h2>
+      </header>
+
+      <section class="projects">
+
+        <!-- Filter buttons -->
+        <ul class="filter-list">
+          <li class="filter-item">
+            <button class="active" data-filter="all">All</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter="configuration">Configuration</button>
+          </li>
+          <li class="filter-item">
+            <button data-filter="documents">Documents</button>
+          </li>
+        </ul>
+
+        <div class="filter-select-box">
+          <button class="filter-select" data-select>
+            <div class="select-value" data-selecct-value>Select category</div>
+            <div class="select-icon">
+              <ion-icon name="chevron-down"></ion-icon>
+            </div>
+          </button>
+          <ul class="select-list">
+            <li class="select-item">
+              <button data-select-item>All</button>
+            </li>
+            <li class="select-item">
+              <button data-select-item>Configuration</button>
+            </li>
+            <li class="select-item">
+              <button data-select-item>Documents</button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Project list -->
+        <ul class="project-list">
+          <li class="project-item active" data-filter-item data-category="configuration">
+            <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="images.png" alt="images not valid" loading="lazy">
+              </figure>
+              <h3 class="project-title">Shop & Npcs</h3>
+              <p class="project-category">Configuration</p>
+            </a>
+          </li>
+            
+          <li class="project-item  active" data-filter-item data-category="configuration">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images.png" alt="images not valid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Crates Rework [Qrex]</h3>
+
+                <p class="project-category">Configuration</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="configuration">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images.png" alt="images not valid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Weekly Crates</h3>
+
+                <p class="project-category">Configuration via Excellent Crates</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="configuration">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images.png" alt="images not valid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Custom Chat Setup</h3>
+
+                <p class="project-category">Plugins Configuration</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="configuration">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images.png" alt="images not valid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Discord Server Setup</h3>
+
+                <p class="project-category">Configuration via security and Feature</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="configuration">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images.png" alt="images not valid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Monthly Giveaway</h3>
+
+                <p class="project-category">Configuration via Advanced Crates</p>
+
+              </a>
+            </li>
+            
+            <li class="project-item  active" data-filter-item data-category="configuration">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="images.png" alt="images not valid" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">PvP Event Qrex</h3>
+
+                <p class="project-category">Configuration</p>
+
+              </a>
+            </li>
+            
+            
+
+          <!-- Add more project items here -->
+
+          <li class="project-item active" data-filter-item data-category="documents">
+            <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="images.png" alt="images not valid" loading="lazy">
+              </figure>
+              <h3 class="project-title">Staff Applications FAQ</h3>
+              <p class="project-category">Document via Google Docs</p>
+            </a>
+          </li>
+
+          <li class="project-item active" data-filter-item data-category="documents">
+            <a href="#">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="images.png" alt="images not valid" loading="lazy">
+              </figure>
+              <h3 class="project-title">Staff Ticket Guide</h3>
+              <p class="project-category">Document via Google Docs</p>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- JavaScript for filter functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const filterButtons = document.querySelectorAll('.filter-list button');
+
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const filter = this.dataset.filter;
+          const projectItems = document.querySelectorAll('.project-item');
+
+          projectItems.forEach(item => {
+            const category = item.getAttribute('data-category');
+
+            if (filter === 'all' || category === filter) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+
+          filterButtons.forEach(btn => {
+            btn.classList.remove('active');
+          });
+
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
